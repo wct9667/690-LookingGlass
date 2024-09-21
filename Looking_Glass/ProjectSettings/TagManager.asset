@@ -6,6 +6,7 @@ TagManager:
   tags:
   - New_Trench_Trigger
   - Destroy
+  - DestroyProjectile
   layers:
   - Default
   - TransparentFX
