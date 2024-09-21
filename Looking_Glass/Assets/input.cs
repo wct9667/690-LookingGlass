@@ -4,15 +4,29 @@ using UnityEngine;
 
 public class input : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private float rotationSpeed = 5.0f;  
+    [SerializeField] private float maxRotationX = 10.0f; 
+    [SerializeField] private float maxRotationY = 10.0f; 
+
+    private Vector2 screenCenter;
+
     void Start()
     {
-        
+        screenCenter = new Vector2(Screen.width / 2, Screen.height / 2);
     }
 
-    // Update is called once per frame
     void Update()
     {
+        Vector2 mousePos = Input.mousePosition;
+        Vector2 offsetFromCenter = mousePos - screenCenter;
         
+        float mouseXNormalized = (offsetFromCenter.x / Screen.width) * 2;
+        float mouseYNormalized = (offsetFromCenter.y / Screen.height) * 2;
+        
+        float targetRotationX = Mathf.Clamp(-mouseYNormalized * maxRotationX, -maxRotationX, maxRotationX);
+        float targetRotationY = Mathf.Clamp(mouseXNormalized * maxRotationY, -maxRotationY, maxRotationY);
+        
+        Quaternion targetRotation = Quaternion.Euler(targetRotationX, targetRotationY, 0);
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
     }
 }
