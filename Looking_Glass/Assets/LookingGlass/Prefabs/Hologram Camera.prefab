@@ -36,9 +36,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4303130077286399406}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &114865344359803568
 MonoBehaviour:
@@ -143,7 +144,7 @@ MonoBehaviour:
       hwid: LKG-P23083
       index: 1
       state: ok
-      windowCoordX: 1920
+      windowCoordX: -1536
       windowCoordY: 0
   emulatedDeviceTemplate:
     calibration:
@@ -173,31 +174,31 @@ MonoBehaviour:
       renderAspect: 0.75
       tileCount: 48
   transformMode: 0
-  nearClipFactor: 1.5
-  farClipFactor: 4
-  nearClipPlane: 0.01
-  farClipPlane: 45
-  focalPlane: 40.721733
-  size: 5
+  nearClipFactor: 0.99
+  farClipFactor: 11.6
+  nearClipPlane: 33.221733
+  farClipPlane: 60.721733
+  focalPlane: 8.200001
+  size: 8
   sizeMode: 0
   clearFlags: 2
   background: {r: 0, g: 0, b: 0, a: 1}
   cullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  fov: 14
+  fov: 15
   depth: 0
   renderingPath: -1
   useOcclusionCulling: 1
   allowHDR: 1
   allowMSAA: 1
   allowDynamicResolution: 0
-  useFrustumTarget: 0
+  useFrustumTarget: 1
   frustumTarget: {fileID: 0}
   centerOffset: 0
   horizontalFrustumOffset: 0
   verticalFrustumOffset: 0
-  depthiness: 1
+  depthiness: 3
   drawHandles: 1
   frustumColor: {r: 0, g: 1, b: 0, a: 1}
   middlePlaneColor: {r: 0.5882353, g: 0.19607843, b: 1, a: 1}
@@ -373,9 +374,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9189f03a1c995459a5391739d2a9d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectile: {fileID: 5884082542074927681, guid: 6ed33901c1025674499c7ea81d8c2825, type: 3}
+  projectileSpawn: {fileID: 0}
   rotationSpeed: 5
-  maxRotationX: 10
-  maxRotationY: 10
+  maxRotationX: 45
+  maxRotationY: 45
 --- !u!114 &1178830178702995548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,6 +392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trenchSection: {fileID: 8612060199623132235, guid: 2d3895495ba025b488f104d6d0d248a5, type: 3}
+  spawnDepth: 130
 --- !u!65 &6909095477706576206
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -437,3 +441,34 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &3792244284070074421
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4303130077286399406}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4303130077286399406
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3792244284070074421}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -8.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4858807375538342}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

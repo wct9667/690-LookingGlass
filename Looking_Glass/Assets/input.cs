@@ -6,6 +6,7 @@ using UnityEngine;
 public class input : MonoBehaviour
 {
     [SerializeField] private GameObject projectile;
+    [SerializeField] private GameObject projectileSpawn;
     [SerializeField] private float rotationSpeed = 5.0f;  
     [SerializeField] private float maxRotationX = 10.0f; 
     [SerializeField] private float maxRotationY = 10.0f; 
@@ -34,7 +35,7 @@ public class input : MonoBehaviour
         //shooting
         if (Input.GetMouseButtonDown(0))
         {
-            Instantiate(projectile, new Vector3(transform.position.x, transform.position.y - .5f, transform.position.z),
+            Instantiate(projectile, new Vector3(projectileSpawn.transform.position.x, projectileSpawn.transform.position.y - .5f, projectileSpawn.transform.position.z),
                 transform.rotation);
         }
     }
