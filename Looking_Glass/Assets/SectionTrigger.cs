@@ -7,10 +7,9 @@ using UnityEngine;
 public class SectionTrigger : MonoBehaviour
 {
     [SerializeField] private GameObject trenchSection;
-    [SerializeField] private float spawnDepth = 50;
- 
+    [SerializeField] private Transform spawnPoint;
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("New_Trench_Trigger")) Instantiate(trenchSection, new Vector3(0, 0, spawnDepth), Quaternion.identity);
+        if (other.gameObject.CompareTag("New_Trench_Trigger")) Instantiate(trenchSection, new Vector3(0, 0, spawnPoint.position.z), Quaternion.identity);
     }
 }

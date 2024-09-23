@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51dc33dac1bb08044902451b75286bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 20
   timeUntilDestroy: 5
 --- !u!1001 &5098796678603723445
 PrefabInstance:
@@ -179,8 +179,13 @@ PrefabInstance:
       propertyPath: m_Lightmapping
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 11489952, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+      propertyPath: m_lightSaberFactor
+      value: 0.45
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11468384, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+    - {fileID: 10825254, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
