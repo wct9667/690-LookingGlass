@@ -15,23 +15,35 @@ public class Swooping : MonoBehaviour
 
     private float ship1Offset;
     private float ship2Offset;
+    private float shotTime;
+    private Vector3 ship1PreviousPosition;
+    private Vector3 ship2PreviousPosition;
+    
+    
     [SerializeField] private float ship1XOffset = 1.0f;
     [SerializeField] private float ship2XOffset = -1.0f;
+
+    [SerializeField] private GameObject projectile;
+    [SerializeField] private float shotFrequency = 1.0f;
+
     
     
     void Update()
     {
-        MoveShip(ship1, ship1Offset, ship1XOffset);
-        MoveShip(ship2, ship2Offset, ship2XOffset);
+        ship1PreviousPosition = MoveShip(ship1, ship1Offset, ship1XOffset, ship1PreviousPosition);
+        ship2PreviousPosition = MoveShip(ship2, ship2Offset, ship2XOffset,  ship2PreviousPosition);
     }
 
     private void Start()
     {
         ship1Offset = 0.0f;
         ship2Offset = Mathf.PI;
+        shotTime = 0.0f;
+        ship1PreviousPosition = ship1.position;
+        ship2PreviousPosition = ship2.position;
     }
 
-    void MoveShip(Transform ship, float offset, float shipXOffset)
+    Vector3 MoveShip(Transform ship, float offset, float shipXOffset, Vector3 previousPosition)
     {
         float time = Time.time * swoopFrequency + offset;
         
@@ -43,12 +55,38 @@ public class Swooping : MonoBehaviour
         
         position.y = CalculateSwoopHeight(t);
         
+        shotTime += Time.deltaTime;
+        // look towards or away from the player
+        if ( IsMovingTowardsPlayer(position, previousPosition, playerCamera.position))
+        {
+            ship.LookAt(playerCamera.position);
+
+            if (shotTime > shotFrequency)
+            {
+                shotTime = 0;
+                Instantiate(projectile, new Vector3(ship.position.x, ship.position.y, ship.position.z), ship.rotation);
+            }
+        }
+        else
+        {
+            Vector3 lookDirection = position + (position - playerCamera.position).normalized * 10f;
+            ship.LookAt(lookDirection);
+        }
+        
         ship.position = position;
+       
+        return ship.position;
     }
     
     float CalculateSwoopHeight(float t)
     {
-        // Quadratic curve formula for the swoop:
         return Mathf.Lerp(swoopHeight, swoopHeight + 10f, t) - 4 * (t - 0.5f) * (t - 0.5f) * (swoopHeight - dipHeight);
+    }
+    
+    bool IsMovingTowardsPlayer(Vector3 currentPosition, Vector3 previousPosition, Vector3 playerPosition)
+    {
+        float currentDistance = Vector3.Distance(currentPosition, playerPosition);
+        float previousDistance = Vector3.Distance(previousPosition, playerPosition);
+        return currentDistance < previousDistance;
     }
 }
