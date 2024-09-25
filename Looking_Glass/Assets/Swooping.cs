@@ -65,7 +65,7 @@ public class Swooping : MonoBehaviour
             if (shotTime > shotFrequency)
             {
                 shotTime = 0;
-                Instantiate(projectile, new Vector3(ship.position.x, ship.position.y, ship.position.z), new Quaternion(ship.rotation.x + Random.Range(-5,5), ship.rotation.y, ship.rotation.z, ship.rotation.w));
+                Instantiate(projectile, new Vector3(ship.position.x, ship.position.y, ship.position.z), new Quaternion(ship.rotation.x + Random.Range(-5,5), ship.rotation.y + Random.Range(-1,1), ship.rotation.z , ship.rotation.w));
             }
         }
         else

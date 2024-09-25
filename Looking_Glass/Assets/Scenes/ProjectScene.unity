@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 2d056ac30ecc9e542b26e06133f23602, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 63e88d41c7b648d40aa56765f8cfa80f, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.016090982, g: 0.01466979, b: 0.013826404, a: 1}
+  m_IndirectSpecularColor: {r: 0.5019536, g: 0.5019536, b: 0.5019536, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -930,11 +930,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: targetLKG
-      value: LKG-PORT-
+      value: LKG-PORT-23083
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: clearFlags
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: depthiness
@@ -950,7 +950,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: farClipFactor
-      value: 20.4
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: frustumTarget
@@ -958,7 +958,7 @@ PrefabInstance:
       objectReference: {fileID: 712803376}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: lkgDisplay.id
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: nearClipFactor
@@ -970,7 +970,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: isEmulatingDevice
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: automaticQuiltPreset
@@ -982,91 +982,100 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: lkgDisplay.calibration.dpi
-      value: 0
+      value: 324
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: lkgDisplay.calibration.pitch
-      value: 0
+      value: 52.59997
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: lkgDisplay.calibration.slope
-      value: 0
+      value: -7.094761
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: lkgDisplay.defaultQuilt.rows
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: lkgDisplay.hardwareInfo.hwid
-      value: 
+      value: LKG-P23083
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: lkgDisplay.calibration.center
-      value: 0
+      value: 0.5805365
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: lkgDisplay.calibration.serial
-      value: 
+      value: LKG-PORT-23083
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: lkgDisplay.hardwareInfo.index
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: lkgDisplay.hardwareInfo.state
-      value: 
+      value: ok
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: lkgDisplay.calibration.invView
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: lkgDisplay.calibration.rawJson
-      value: 
+      value: "{\r\n  \"DPI\": {\r\n    \"value\": 324.0\r\n  },\r\n  \"center\":
+        {\r\n    \"value\": 0.58053650350054364\r\n  },\r\n  \"configVersion\": \"1.0\",\r\n 
+        \"flipImageX\": {\r\n    \"value\": 0\r\n  },\r\n  \"flipImageY\": {\r\n   
+        \"value\": 0\r\n  },\r\n  \"flipSubp\": {\r\n    \"value\": 0.0\r\n  },\r\n 
+        \"fringe\": {\r\n    \"value\": 0.0\r\n  },\r\n  \"invView\": {\r\n    \"value\":
+        1\r\n  },\r\n  \"pitch\": {\r\n    \"value\": 52.599973602519654\r\n  },\r\n 
+        \"screenH\": {\r\n    \"value\": 2048.0\r\n  },\r\n  \"screenW\": {\r\n   
+        \"value\": 1536.0\r\n  },\r\n  \"serial\": \"LKG-PORT-23083\",\r\n  \"slope\":
+        {\r\n    \"value\": -7.0947610652403279\r\n  },\r\n  \"verticalAngle\": {\r\n   
+        \"value\": 0\r\n  },\r\n  \"viewCone\": {\r\n    \"value\": 40.0\r\n  }\r\n}"
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: lkgDisplay.calibration.screenH
-      value: 0
+      value: 2048
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: lkgDisplay.calibration.screenW
-      value: 0
+      value: 1536
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: lkgDisplay.calibration.viewCone
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: lkgDisplay.defaultQuilt.columns
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: lkgDisplay.defaultQuilt.tileCount
-      value: 0
+      value: 48
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: lkgDisplay.defaultQuilt.quiltWidth
-      value: 0
+      value: 3360
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: lkgDisplay.defaultQuilt.quiltHeight
-      value: 0
+      value: 3360
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: lkgDisplay.calibration.configVersion
-      value: 
+      value: 1.0
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: lkgDisplay.defaultQuilt.renderAspect
-      value: 0
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: lkgDisplay.hardwareInfo.windowCoordX
-      value: 0
+      value: -1536
       objectReference: {fileID: 0}
     - target: {fileID: 114865344359803568, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: lkgDisplay.hardwareInfo.hardwareVersion
-      value: 
+      value: portrait
       objectReference: {fileID: 0}
     - target: {fileID: 1178830178702995548, guid: 3019d4eebe2593e428d7b9ccb096ceda, type: 3}
       propertyPath: spawnPoint
@@ -1229,6 +1238,87 @@ MonoBehaviour:
   ship2XOffset: -2
   projectile: {fileID: 5884082542074927681, guid: 24316229410d9f64399fa116738661a4, type: 3}
   shotFrequency: 1
+--- !u!1001 &1378898155
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0022063daf40e574e9c44b2da00d6048, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0022063daf40e574e9c44b2da00d6048, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 56.69
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0022063daf40e574e9c44b2da00d6048, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 56.69
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0022063daf40e574e9c44b2da00d6048, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 56.69
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0022063daf40e574e9c44b2da00d6048, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0022063daf40e574e9c44b2da00d6048, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.27
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0022063daf40e574e9c44b2da00d6048, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0022063daf40e574e9c44b2da00d6048, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.60552615
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0022063daf40e574e9c44b2da00d6048, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0022063daf40e574e9c44b2da00d6048, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7958254
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0022063daf40e574e9c44b2da00d6048, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0022063daf40e574e9c44b2da00d6048, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0022063daf40e574e9c44b2da00d6048, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -105.467
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0022063daf40e574e9c44b2da00d6048, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0022063daf40e574e9c44b2da00d6048, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0022063daf40e574e9c44b2da00d6048, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b6425714f5ed3e947abac1858ec912e1, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0022063daf40e574e9c44b2da00d6048, type: 3}
+      propertyPath: m_Name
+      value: chief_optimized (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0022063daf40e574e9c44b2da00d6048, type: 3}
 --- !u!1 &1391389165
 GameObject:
   m_ObjectHideFlags: 0
@@ -1413,7 +1503,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0022063daf40e574e9c44b2da00d6048, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.01
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0022063daf40e574e9c44b2da00d6048, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1453,7 +1543,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0022063daf40e574e9c44b2da00d6048, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 126
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
